@@ -31,15 +31,15 @@ const AddMovie = (props) => {
         api()
             .post('/movies', newMovie)
             .then(response => {
-                console.log(response)
-
-                setNewMovie({
-                  id: '',
-                  title: '',
-                  director: '',
-                  metascore: '',
-                  stars: []
-                })
+              console.log(response)
+              setNewMovie({
+                id: '',
+                title: '',
+                director: '',
+                metascore: '',
+                stars: []
+              })
+              props.history.push("/");
             })
             .catch(error => {
                 console.log('Failed to create a new movie', error)
