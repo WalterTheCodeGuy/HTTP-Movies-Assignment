@@ -7,12 +7,8 @@ const MovieCard = props => {
   return (
     <div className="movie-card">
       <h2>{title}</h2>
-      <div className="movie-director">
-        Director: <em>{director}</em>
-      </div>
-      <div className="movie-metascore">
-        Metascore: <strong>{metascore}</strong>
-      </div>
+      <h3>Directed By:</h3> <em>{director}</em>
+      <h3>Metascore:</h3> <strong>{metascore}</strong>
       <h3>Actors</h3>
         {stars.map(star => (
           <div key={star} className="movie-star">

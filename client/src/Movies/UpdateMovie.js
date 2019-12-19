@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import api from '../utils/api'
 
+
+
 const UpdateMovie = (props) => {
+ 
     const [movie, setMovie] = useState({
         id: '',
         title: '',
@@ -48,11 +51,11 @@ const UpdateMovie = (props) => {
     }
 
     return (
-        <div className='movie-card'>
+        <div className='update-form'>
             <form onSubmit={handleSubmit} className='edit-form'>
                 <h1>Update Movie</h1>
-                <label>Title</label>
-                <h3>{movie.title}</h3>
+                <label>Title:</label>
+                {/* <h3>{movie.title}</h3> */}
                 <input 
                     type='text'
                     name='title'
@@ -61,8 +64,8 @@ const UpdateMovie = (props) => {
                     onChange={handleChange}
                 />
 
-                <label>Director</label>
-                <h3>{movie.director}</h3>
+                <label>Director:</label>
+                {/* <h3>{movie.director}</h3> */}
                 <input 
                     type='text'
                     name='director'
@@ -71,8 +74,8 @@ const UpdateMovie = (props) => {
                     onChange={handleChange}
                 />
 
-                <label>Metascore</label>
-                <h3>{movie.metascore}</h3>
+                <label>Metascore:</label>
+                {/* <h3>{movie.metascore}</h3> */}
                 <input 
                     type='text'
                     name='metascore'
@@ -81,8 +84,14 @@ const UpdateMovie = (props) => {
                     onChange={handleChange}
                 />
 
-                <label>Stars</label>
-                <h3>{movie.stars}</h3>
+                <label>Stars:</label>
+                {/* <h3>{movie.stars}</h3>
+                <h3>{movie.stars.map(star => (
+                    <div key={star} className="movie-star">
+                      {star}
+                    </div>
+                    ))}
+                </h3> */}
                 <input 
                     type='text'
                     name='stars'
@@ -90,8 +99,7 @@ const UpdateMovie = (props) => {
                     value={movie.stars}
                     onChange={handleStars}
                 />
-
-                <button className='save-button'>Save</button>
+                <button className='update-button'>Update</button>
             </form>
         </div>
     )

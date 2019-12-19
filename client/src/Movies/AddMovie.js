@@ -47,11 +47,11 @@ const AddMovie = (props) => {
     }
 
     return(
-      <div className='movie-card'>
+      <div className='add-movie'>
       <form onSubmit={handleSubmit} className='edit-form'>
           <h1>Add Movie</h1>
-          <label>Title</label>
-          <h3>{newMovie.title}</h3>
+          <label>Title:</label>
+          {/* <h3>{newMovie.title}</h3> */}
           <input 
               type='text'
               name='title'
@@ -60,18 +60,18 @@ const AddMovie = (props) => {
               onChange={handleChange}
           />
 
-          <label>Director</label>
-          <h3>{newMovie.director}</h3>
+          <label>Director:</label>
+          {/* <h3>{newMovie.director}</h3> */}
           <input 
               type='text'
               name='director'
-              placeholder='New Title'
+              placeholder='New Director'
               value={newMovie.director}
               onChange={handleChange}
           />
 
-          <label>Metascore</label>
-          <h3>{newMovie.metascore}</h3>
+          <label>Metascore:</label>
+          {/* <h3>{newMovie.metascore}</h3> */}
           <input 
               type='text'
               name='metascore'
@@ -80,8 +80,8 @@ const AddMovie = (props) => {
               onChange={handleChange}
           />
 
-          <label>Stars</label>
-          <h3>{newMovie.stars}</h3>
+          <label>Stars:</label>
+          {/* <h3>{newMovie.stars}</h3> */}
           <input 
               type='text'
               name='stars'
@@ -90,7 +90,7 @@ const AddMovie = (props) => {
               onChange={handleChange}
           />
 
-          <button className='save-button'>Add</button>
+          <button className='update-button'>Add</button>
       </form>
   </div>
     )
