@@ -20,10 +20,6 @@ const Movie = (props) => {
       .catch(err => console.log(err));
   }, [props.match.params.id])
 
-  const saveMovie = () => {
-    props.addToSavedList(movie)
-  };
-
   const deleteMovie = (movie) => {
     api().delete(`/movies/${props.match.params.id}`, movie)
       .then(res => {
@@ -39,9 +35,6 @@ const Movie = (props) => {
       return (
         <div className="save-wrapper">
             <MovieCard movie={movie} />
-            <div className="save-button" onClick={saveMovie}>
-                Save
-            </div>
             <Link to={`/update-movie/${movie.id}`}>
               <button className='edit-button'>Edit</button>
             </Link>

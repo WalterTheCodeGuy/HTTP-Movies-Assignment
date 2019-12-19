@@ -51,7 +51,6 @@ const AddMovie = (props) => {
       <form onSubmit={handleSubmit} className='edit-form'>
           <h1>Add Movie</h1>
           <label>Title:</label>
-          {/* <h3>{newMovie.title}</h3> */}
           <input 
               type='text'
               name='title'
@@ -61,7 +60,6 @@ const AddMovie = (props) => {
           />
 
           <label>Director:</label>
-          {/* <h3>{newMovie.director}</h3> */}
           <input 
               type='text'
               name='director'
@@ -71,7 +69,6 @@ const AddMovie = (props) => {
           />
 
           <label>Metascore:</label>
-          {/* <h3>{newMovie.metascore}</h3> */}
           <input 
               type='text'
               name='metascore'
@@ -81,7 +78,6 @@ const AddMovie = (props) => {
           />
 
           <label>Stars:</label>
-          {/* <h3>{newMovie.stars}</h3> */}
           <input 
               type='text'
               name='stars'

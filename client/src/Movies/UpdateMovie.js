@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import api from '../utils/api'
 
-
-
 const UpdateMovie = (props) => {
  
     const [movie, setMovie] = useState({
@@ -55,7 +53,6 @@ const UpdateMovie = (props) => {
             <form onSubmit={handleSubmit} className='edit-form'>
                 <h1>Update Movie</h1>
                 <label>Title:</label>
-                {/* <h3>{movie.title}</h3> */}
                 <input 
                     type='text'
                     name='title'
@@ -65,7 +62,6 @@ const UpdateMovie = (props) => {
                 />
 
                 <label>Director:</label>
-                {/* <h3>{movie.director}</h3> */}
                 <input 
                     type='text'
                     name='director'
@@ -75,7 +71,6 @@ const UpdateMovie = (props) => {
                 />
 
                 <label>Metascore:</label>
-                {/* <h3>{movie.metascore}</h3> */}
                 <input 
                     type='text'
                     name='metascore'
@@ -85,13 +80,6 @@ const UpdateMovie = (props) => {
                 />
 
                 <label>Stars:</label>
-                {/* <h3>{movie.stars}</h3>
-                <h3>{movie.stars.map(star => (
-                    <div key={star} className="movie-star">
-                      {star}
-                    </div>
-                    ))}
-                </h3> */}
                 <input 
                     type='text'
                     name='stars'

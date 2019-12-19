@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
 import MovieCard from './MovieCard';
 import api from '../utils/api';
 
@@ -16,9 +15,7 @@ const MovieList = () => {
       
       {movies.map(movie => (
         <div className='movieBox'>
-          <Link to={`/movies/${movie.id}`}>
             <MovieCard movie={movie} />
-          </Link>
         </div>
       ))}
     </div>

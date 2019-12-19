@@ -17,12 +17,8 @@ body {
 
 .movie-list a {
   text-decoration: none;
+  color: #2F6690;
 }
-
-/* .movie-director {
-  padding: 4px 0;
-  font-size: 0.8rem;
-} */
 
 .saved-list {
   background-color: #fff;
